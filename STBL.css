@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 05-02-2019 20:51:39
+ * Last Modified: 05-02-2019 21:57:38
  * Version: 1.2.2
  */
 
@@ -299,11 +299,27 @@ span.dms>.guild {
   opacity: 0.4;
 }
 
+  /* When revealed, doesn't keep the damn gray background. */
+.theme-dark .spoilerText-3p6IlD {
+  background-color: transparent;
+}
+
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {
   background-color: var(--hover-color);
+  animation: spoilerHover 4s  ease-in-out infinite;
   opacity: 0.4;
 }
 
 .theme-dark .spoilerContainer-331r0R.hidden-HHr2R9:not(.spoilerWarning-2aAZq1) {
   opacity: 0.3;
+}
+
+/* Just making it go different color is boring upon hover. Let's do this. */
+@keyframes spoilerHover {
+  0% {
+    filter:hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(359deg);
+  }
 }
