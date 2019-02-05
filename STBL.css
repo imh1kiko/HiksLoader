@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 05-02-2019 22:02:06
+ * Last Modified: 06-02-2019 01:31:28
  * Version: 1.2.3
  */
 
@@ -331,8 +331,14 @@ span.dms>.guild {
   opacity: 0.4;
 }
 
-.theme-dark .spoilerContainer-331r0R.hidden-HHr2R9:not(.spoilerWarning-2aAZq1) {
-  opacity: 0.3;
+.theme-dark .spoilerContainer-331r0R.hidden-HHr2R9:not(div) {
+  opacity: 0.4;
+}
+
+.theme-dark .spoilerWarning-2aAZq1 {
+  background-color: rgba(0,0,0,0.4);
+  border: 1px dashed rgba(255,255,255,0.5);
+  color: #ffffff;
 }
 
 /* Just making it go different color is boring upon hover. Let's do this. */
