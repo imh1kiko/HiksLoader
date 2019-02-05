@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 01-02-2019 17:47:43
- * Version: 1.2
+ * Last Modified: 05-02-2019 19:50:16
+ * Version: 1.2.1
  */
 
 /*** REQUIRED:
@@ -150,7 +150,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.2" !important;
+  content: "HL v1.2.1" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -282,4 +282,12 @@ span.dms>.guild {
 .callAvatarBorder-1D_KaE.voice-2D-tt_.speaking-oCqYMI, .avatarSpeaking-1wJCNq {
   border-radius: 50%;
   box-shadow: inset 0 0 0 3px var(--voiceColor);
+}
+
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9 {
+  background-color: var(--main-color);
+}
+
+.theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {
+  background-color: var(--hover-color);
 }
