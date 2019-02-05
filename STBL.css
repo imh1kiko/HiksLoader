@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 05-02-2019 19:50:16
+ * Last Modified: 05-02-2019 20:31:33
  * Version: 1.2.1
  */
 
@@ -284,10 +284,24 @@ span.dms>.guild {
   box-shadow: inset 0 0 0 3px var(--voiceColor);
 }
 
+/* SPOILER UPDATE */
+
+/* 
+  Since I can't tell if user uses hex, rgba or hsla, I'll have to resort to using 'Opacity'.
+  This is a terrible approach, but I can't fix this using CSS alone. At least it will render correctly for everyone.
+  Additionally, spoilored images are also transparent, and not a blob of blur.
+*/
+
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9 {
   background-color: var(--main-color);
+  opacity: 0.4;
 }
 
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {
   background-color: var(--hover-color);
+  opacity: 0.4;
+}
+
+.theme-dark .spoilerContainer-331r0R.hidden-HHr2R9:not(.spoilerWarning-2aAZq1) {
+  opacity: 0.3;
 }
