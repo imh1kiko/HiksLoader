@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 05-02-2019 20:33:01
+ * Last Modified: 05-02-2019 20:51:39
  * Version: 1.2.2
  */
 
@@ -24,8 +24,10 @@ Tell me to fuck off whenever you feel the need to.
 @import url("https://fonts.googleapis.com/css?family=Over+the+Rainbow");
 @import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
 @import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
-@import url("https://cdn.rawgit.com/Zerthox/ClearVision/master/css/ClearVision_v5.min.css");
-@import url("https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css");
+
+/* RawGit Shut down, switched over to JsDelivr */
+@import url("https://cdn.jsdelivr.net/gh/Zerthox/ClearVision@master/css/ClearVision_v5.min.css");
+@import url("https://cdn.jsdelivr.net/gh/rauenzi/BetterDiscordAddons@master/Themes/RadialStatus/import/RadialStatus.css");
 :root {
   --main-color: #2780e6;
   --hover-color: #1e63b3;

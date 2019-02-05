@@ -1,9 +1,5 @@
-//META{"name":"Hiks Loader","description":"Divine ass to rule them all! And also divine boobs!","author":"Hiki","version":"1.0.2"}*//{}
+//META{"name":"Hiks Loader (new)","description":"Divine ass to rule them all! And also divine boobs!","author":"Hiki","version":"???"}*//{}
 
-/***
-    !!! THIS RUNS ON DEVELOPMENT CDN! That means if I fuck up the code, you'll feel it. !!!
-***/
-
-@import url(https://rawgit.com/imh1kiko/HiksLoader/master/STBL.css);
+@import url(https://cdn.jsdelivr.net/gh/imh1kiko/HiksLoader@master/STBL.css);
 
 
