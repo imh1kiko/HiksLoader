@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 05-02-2019 21:57:38
- * Version: 1.2.2
+ * Last Modified: 05-02-2019 22:02:06
+ * Version: 1.2.3
  */
 
 /*** REQUIRED:
@@ -28,6 +28,7 @@ Tell me to fuck off whenever you feel the need to.
 /* RawGit Shut down, switched over to JsDelivr */
 @import url("https://cdn.jsdelivr.net/gh/Zerthox/ClearVision@master/css/ClearVision_v5.min.css");
 @import url("https://cdn.jsdelivr.net/gh/rauenzi/BetterDiscordAddons@master/Themes/RadialStatus/import/RadialStatus.css");
+
 :root {
   --main-color: #2780e6;
   --hover-color: #1e63b3;
@@ -96,10 +97,12 @@ em {
 }
 
 @-webkit-keyframes idling {
+
   0%,
   100% {
     border-color: #ffbe54;
   }
+
   50% {
     border-color: #9a4218;
   }
@@ -135,7 +138,7 @@ span.dms>.guild {
 }
 
 [class*="membersGroup-"] {
-  color: hsla(0,0%,100%,.4) !important;
+  color: hsla(0, 0%, 100%, .4) !important;
 }
 
 [class*="activity-"] strong {
@@ -152,29 +155,33 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.2.2" !important;
+  content: "HL v1.2.3" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
 /* ----------------- */
 
 @keyframes idling {
+
   0%,
   100% {
     border-color: #ffbe54;
   }
+
   50% {
     border-color: #9a4218;
   }
 }
 
 @-webkit-keyframes blink {
+
   0%,
   100%,
   60%,
   80% {
     color: gray;
   }
+
   70%,
   90% {
     color: white;
@@ -182,12 +189,14 @@ span.dms>.guild {
 }
 
 @keyframes blink {
+
   0%,
   100%,
   60%,
   80% {
     color: gray;
   }
+
   70%,
   90% {
     color: white;
@@ -195,11 +204,13 @@ span.dms>.guild {
 }
 
 @-webkit-keyframes dnd {
+
   0%,
   100% {
     -webkit-filter: grayscale(0%) blur(0px);
     filter: grayscale(0%) blur(0px);
   }
+
   50% {
     -webkit-filter: grayscale(100%) blur(1px);
     filter: grayscale(100%) blur(1px);
@@ -207,11 +218,13 @@ span.dms>.guild {
 }
 
 @keyframes dnd {
+
   0%,
   100% {
     -webkit-filter: grayscale(0%) blur(0px);
     filter: grayscale(0%) blur(0px);
   }
+
   50% {
     -webkit-filter: grayscale(100%) blur(1px);
     filter: grayscale(100%) blur(1px);
@@ -219,20 +232,24 @@ span.dms>.guild {
 }
 
 @-webkit-keyframes unReadMessage {
+
   0%,
   100% {
     color: white;
   }
+
   50% {
     color: rgba(255, 255, 255, 0.3);
   }
 }
 
 @keyframes unReadMessage {
+
   0%,
   100% {
     color: white;
   }
+
   50% {
     color: rgba(255, 255, 255, 0.3);
   }
@@ -242,6 +259,7 @@ span.dms>.guild {
   0% {
     -webkit-transform: scale(1);
   }
+
   100% {
     -webkit-transform: scale(1.1);
   }
@@ -249,16 +267,18 @@ span.dms>.guild {
 
 @keyframes dmA {
   0% {
-            transform: scale(1);
+    transform: scale(1);
   }
+
   100% {
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
 /* Fix for issue with opacity not being the same */
 
-[class*="theme-"] .content-yTz4x3, [class*="theme-"] .guildsWrapper-5TJh6A,
+[class*="theme-"] .content-yTz4x3,
+[class*="theme-"] .guildsWrapper-5TJh6A,
 #friends DIV[class*="headerBar"],
 .typeWindows-1za-n7,
 .header-2o-2hj {
@@ -281,7 +301,8 @@ span.dms>.guild {
   border-radius: 8px;
 }
 
-.callAvatarBorder-1D_KaE.voice-2D-tt_.speaking-oCqYMI, .avatarSpeaking-1wJCNq {
+.callAvatarBorder-1D_KaE.voice-2D-tt_.speaking-oCqYMI,
+.avatarSpeaking-1wJCNq {
   border-radius: 50%;
   box-shadow: inset 0 0 0 3px var(--voiceColor);
 }
@@ -299,14 +320,14 @@ span.dms>.guild {
   opacity: 0.4;
 }
 
-  /* When revealed, doesn't keep the damn gray background. */
+/* When revealed, doesn't keep the damn gray background. */
 .theme-dark .spoilerText-3p6IlD {
   background-color: transparent;
 }
 
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9:hover {
   background-color: var(--hover-color);
-  animation: spoilerHover 4s  ease-in-out infinite;
+  animation: spoilerHover 4s ease-in-out infinite;
   opacity: 0.4;
 }
 
@@ -317,8 +338,9 @@ span.dms>.guild {
 /* Just making it go different color is boring upon hover. Let's do this. */
 @keyframes spoilerHover {
   0% {
-    filter:hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
+
   100% {
     filter: hue-rotate(359deg);
   }
