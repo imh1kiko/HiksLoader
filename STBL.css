@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 06-02-2019 01:31:28
+ * Last Modified: 06-02-2019 17:38:40
  * Version: 1.2.3
  */
 
@@ -331,8 +331,8 @@ span.dms>.guild {
   opacity: 0.4;
 }
 
-.theme-dark .spoilerContainer-331r0R.hidden-HHr2R9:not(div) {
-  opacity: 0.4;
+.theme-dark .spoilerContainer-331r0R.hidden-HHr2R9:not(:focus, div) {
+  opacity: 0.5;
 }
 
 .theme-dark .spoilerWarning-2aAZq1 {
