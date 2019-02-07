@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 07-02-2019 21:05:10
+ * Last Modified: 07-02-2019 21:22:37
  * Version: 1.2.4
  */
 
@@ -348,18 +348,18 @@ span.dms>.guild {
     If left empty, use defaults */
 
 .username-_4ZSMR.da-username {
-  font-family: var(--un-font) !important;
-  font-size: var(--un-size) !important;
-  color: var(--un-color) !important;
+  font-family: var(--un-font);
+  font-size: var(--un-size);
+  color: var(--un-color);
 }
 
 /* Bold in messages */
 /* Same as username, but different variables. */
 
 .markup-2BOw-j strong {
-  font-family: var(--bText-font) !important;
-  font-size: var(--bText-size) !important;
-  color: var(--bText-color) !important;
+  font-family: var(--bText-font);
+  font-size: var(--bText-size);
+  color: var(--bText-color);
 }
 
 /* Random nonsense, because why the fuck not. */
