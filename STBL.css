@@ -365,7 +365,7 @@ span.dms>.guild {
 /* Random nonsense, because why the fuck not. */
 .avatar-17mtNa.da-avatar {
   cursor: url(https://i.imgur.com/6RUFZTI.png), auto;
-  animation: cursor 100ms infinite;
+  animation: cursor 1s infinite;
 }
 
 /* Attempting to get cursor to work, as custom cursors are not supported anymore... for real long time ago. */
