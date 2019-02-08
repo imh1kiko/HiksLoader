@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 07-02-2019 21:22:37
- * Version: 1.2.4
+ * Last Modified: 08-02-2019 22:50:19
+ * Version: 1.2.5
  */
 
 /*** REQUIRED:
@@ -144,7 +144,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.2.4" !important;
+  content: "HL v1.2.5" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -362,17 +362,24 @@ span.dms>.guild {
   color: var(--bText-color);
 }
 
-/* Random nonsense, because why the fuck not. */
+
+
+
+
+/*** == O M I T T E D ! == ***/
+/* Causes CPU to constantly run at 10% higher. */
+
+/* Random nonsense, because why the fuck not.
 .avatar-17mtNa.da-avatar {
   cursor: url(https://i.imgur.com/6RUFZTI.png), auto;
   animation: cursor 1s infinite;
 }
-
+*/
 /* Attempting to get cursor to work, as custom cursors are not supported anymore... for real long time ago. */
 /* 16 frames. 100/16 => 6.25% */
 /* Ah fuck. 15 frames. => 6.66% */
 /* Not working like I expect at all. Seems to animate only with movement. Ah fuck. I don't care. */
-
+/*
 @keyframes cursor {
   0% {cursor: url(https://i.imgur.com/6RUFZTI.png), auto;}
   6.67% {cursor: url(https://i.imgur.com/2aZP5xL.png), auto;}
@@ -389,5 +396,34 @@ span.dms>.guild {
   79.93% {cursor:url(https://i.imgur.com/wBpRcOJ.png), auto;}
   86.59% {cursor:url(https://i.imgur.com/LJ6HSCP.png), auto;}
   93.25% {cursor:url(https://i.imgur.com/dBHBCak.png), auto;}
-  100% {cursor:url(https://i.imgur.com/zH23BYD.png), auto;} /* is actually 99.91 */
+  100% {cursor:url(https://i.imgur.com/zH23BYD.png), auto;}
 }
+*/
+/* Replace for default cursor. Can be toggeled through custom CSS. This goes after :root {}! */
+
+/* 
+  * {
+    cursor: url(https://i.imgur.com/XE7vTYQ.png), auto;
+    animation: cursor_all 1s infinite;
+  }
+*/
+/*
+@keyframes cursor_all {
+  0% {cursor: url(https://i.imgur.com/XE7vTYQ.png), auto;}
+  6.67% {cursor: url(https://i.imgur.com/ZU9ob6E.png), auto;}
+  13.33% {cursor: url(https://i.imgur.com/3xX0jNY.png), auto;}
+  19.99% {cursor:url(https://i.imgur.com/cSXUWHO.png), auto;}
+  26.65% {cursor:url(https://i.imgur.com/jRALVMM.png), auto;}
+  33.31% {cursor:url(https://i.imgur.com/fNutmci.png), auto;}
+  39.7% {cursor:url(https://i.imgur.com/YJV8p8l.png), auto;}
+  46.63% {cursor:url(https://i.imgur.com/tq1p5Da.png), auto;}
+  53.29% {cursor:url(https://i.imgur.com/x6UzlKp.png), auto;}
+  59.95% {cursor:url(https://i.imgur.com/AnRcRWw.png), auto;}
+  66.61% {cursor:url(https://i.imgur.com/nLvGMl7.png), auto;}
+  73.27% {cursor:url(https://i.imgur.com/IX4n22o.png), auto;}
+  79.93% {cursor:url(https://i.imgur.com/CTrqqYO.png), auto;}
+  86.59% {cursor:url(https://i.imgur.com/8WoR32n.png), auto;}
+  93.25% {cursor:url(https://i.imgur.com/p6rnBhs.png), auto;}
+  100% {cursor:url(https://i.imgur.com/D6OTsKR.png), auto;}
+}
+*/
