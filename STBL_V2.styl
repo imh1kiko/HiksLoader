@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 09-02-2019 22:44:23
+ * Last Modified: 09-02-2019 22:54:53
  * Version: 2.0.0
  */
 
@@ -10,10 +10,225 @@
 /*** START of Main ***/
 
 /* :root{} */
+:root
+    --main-color #2780e6
+    --hover-color #1e63b3
+    --background-blur 0
+    --background-brightness 100%
 /* Other shit */
+
+#pubs-container::before,
+#user-profile-modal .header::before,
+.auth-background,
+.auth-tiling-bg,
+.callout-backdrop,
+.invite-modal .invite-splash,
+.radio-theme.dark label,
+.radio-theme.light label,
+.user-popout::before,
+body::after
+    background-image var(--z-background) !important
+    -webkit-filter var(--z-effects)
+    filter var(--z-effects)
+    -webkit-box-shadow var(--z-shadow)
+    box-shadow var(--z-shadow)
+
+em
+    font-family var(--i-f, --i-gf)
+    padding var(--i-pad)
+    font-size var(--i-size)
+    color var(--i-color)
+
 /* Spoiler */
 
-/* I can't fucking remember. */
+
+
+.edited
+    -webkit-animation blink 2s ease-in-out infinite
+    animation blink 2s ease-in-out infinite
+    font-size 13px !important
+
+[class*="theme-"] .wrapper-2F3Zv8 [class*="idle"],
+[class*="theme-"] .wrapper-2F3Zv8 [class*="Idle"],
+.root-2sNHUF [class*="idle"]
+    -webkit-animation idling 3s ease-in-out infinite
+    animation idling 3s ease-in-out infinite
+
+.member-status-dnd,
+[class*="theme-"] [class*="avatar-"] [class*="dnd"],
+[class*="theme-"] [class*="avatar-"] [class*="Dnd"],
+.root-2sNHUF [class*="dnd"],
+[class*="dnd-"]
+    -webkit-animation dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite
+    animation dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite
+
+@-webkit-keyframes
+    idling
+        0%,
+  100% {
+    border-color #ffbe54
+
+50%
+    border-color #9a4218
+    border-color #9a4218
+    -webkit-filter grayscale(100%) blur(1px)
+    filter grayscale(100%) blur(1px)
+    -webkit-filter grayscale(100%) blur(1px)
+    filter grayscale(100%) blur(1px)
+    color rgba(255, 255, 255, 0.3)
+    color rgba(255, 255, 255, 0.3)
+
+}
+    [class*="embedContentInner-"]
+        strong
+            font-size inherit !important
+    @-webkit-keyframes
+        blink
+            0%,
+  100%,
+  60%,
+  80% {
+    color gray
+        dnd
+            0%,
+  100% {
+    -webkit-filter grayscale(0%) blur(0px)
+            filter grayscale(0%) blur(0px)
+        unReadMessage
+            0%,
+  100% {
+    color white
+        dmA
+            0% {
+    -webkit-transform scale(1)
+    @keyframes
+        blink
+            0%,
+  100%,
+  60%,
+  80% {
+    color gray
+        dnd
+            0%,
+  100% {
+    -webkit-filter grayscale(0%) blur(0px)
+            filter grayscale(0%) blur(0px)
+        unReadMessage
+            0%,
+  100% {
+    color white
+        dmA
+            0% {
+    transform scale(1)
+    .username-_4ZSMR
+        &.da-username
+            font-family var(--un-font)
+            font-size var(--un-size)
+            color var(--un-color)
+
+[class*="searchOption-"]
+    -webkit-transition all 250ms ease-in-out
+    transition all 250ms ease-in-out
+
+[class*="innerNoAutocomplete-"]
+    border-radius 10px
+
+[class*="nameUnreadText-"]
+    -webkit-animation unReadMessage 1.5s ease-in-out infinite
+    animation unReadMessage 1.5s ease-in-out infinite
+
+span
+    &.dms
+        & > .guild
+            -webkit-animation dmA 1s cubic-bezier(0.77, -0.35, 0.12, 1.74) alternate infinite !important
+            animation dmA 1s cubic-bezier(0.77, -0.35, 0.12, 1.74) alternate infinite !important
+
+[class*="embedImage-"] img,
+[class*="imageWrapper-"] img
+    border-radius var(--Roundificator)
+
+[class*="membersGroup-"]
+    color hsla(0, 0%, 100%, .4) !important
+
+[class*="activity-"]
+    strong
+        color inherit !important
+
+.emoji
+    &.jumboable
+        width 64px
+        height 64px
+
+[class*="accountDetails-"]::after
+    content "HL 1.2.5d" !important
+
+@keyframes
+    idling
+        0%,
+  100% {
+    border-color #ffbe54
+    spoilerHover
+        0% {
+    filter hue-rotate(0deg)
+
+70%,
+  90%
+    color white
+    color white
+
+100%
+    -webkit-transform scale(1.1)
+    transform scale(1.1)
+    filter hue-rotate(359deg)
+
+}
+[class*="theme-"] .content-yTz4x3,
+[class*="theme-"] .guildsWrapper-5TJh6A,
+#friends DIV[class*="headerBar"],
+.typeWindows-1za-n7,
+.header-2o-2hj
+    background rgba(0, 0, 0, 0.45)
+
+.header-2o-2hj
+    border-right 1px solid var(--main-color)
+    border-bottom-left-radius 10px
+    border-top-left-radius 10px
+
+[class*="theme-"]
+    .channelTextArea-rNsIhG
+        border-radius 10px
+
+.search-bar
+    border-radius 8px
+
+.callAvatarBorder-1D_KaE.voice-2D-tt_.speaking-oCqYMI,
+.avatarSpeaking-1wJCNq
+    border-radius 50%
+    box-shadow inset 0 0 0 3px var(--voiceColor)
+
+.theme-dark
+    .spoilerText-3p6IlD
+        background-color transparent
+        &.hidden-HHr2R9
+            background-color var(--main-color)
+            opacity 0.4
+            &:hover
+                background-color var(--hover-color)
+                animation spoilerHover 4s ease-in-out infinite
+                opacity 0.4
+    .spoilerWarning-2aAZq1
+        background-color rgba(0, 0, 0, 0.4)
+        border 1px dashed rgba(255, 255, 255, 0.5)
+        color #ffffff
+
+.theme-dark .spoilerContainer-331r0R.hidden-HHr2R9:not(:focus, div)
+    opacity 0.5
+
+.markup-2BOw-j
+    strong
+        font-family var(--bText-font)
+        font-size var(--bText-size)
+        color var(--bText-color)
 
 /*** END of Main ***/
 
