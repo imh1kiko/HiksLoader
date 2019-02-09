@@ -1,18 +1,10 @@
 /*
  * Author: Hiki
- * Last Modified: 08-02-2019 22:50:19
+ * Last Modified: 09-02-2019 04:17:19
  * Version: 1.2.5
+ *
+ * Branch: !! D E V E L O P M E N T !!
  */
-
-/*** REQUIRED:
-Zerthox ClearVision
-Zerebos RadialStatus
-
-Importing both without their permission. Sorry, guys.
-Theme files obviously belong to them. You (Zerthox and Zerebos) have all the rights.
-Tell me to fuck off whenever you feel the need to.
-
-***/
 
 @import url("https://fonts.googleapis.com/css?family=Caveat");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script");
@@ -25,7 +17,6 @@ Tell me to fuck off whenever you feel the need to.
 @import url("https://fonts.googleapis.com/css?family=Lakki+Reddy");
 @import url("https://fonts.googleapis.com/css?family=Mr+Bedfort");
 
-/* RawGit Shut down, switched over to JsDelivr */
 @import url("https://cdn.jsdelivr.net/gh/Zerthox/ClearVision@master/css/ClearVision_v5.min.css");
 @import url("https://cdn.jsdelivr.net/gh/rauenzi/BetterDiscordAddons@master/Themes/RadialStatus/import/RadialStatus.css");
 
@@ -144,7 +135,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.2.5" !important;
+  content: "HL 1.2.5d" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -274,8 +265,6 @@ span.dms>.guild {
   background: rgba(0, 0, 0, 0.45);
 }
 
-/* Style tweaks */
-
 .header-2o-2hj {
   border-right: 1px solid var(--main-color);
   border-bottom-left-radius: 10px;
@@ -296,20 +285,11 @@ span.dms>.guild {
   box-shadow: inset 0 0 0 3px var(--voiceColor);
 }
 
-/* SPOILER UPDATE */
-
-/* 
-  Since I can't tell if user uses hex, rgba or hsla, I'll have to resort to using 'Opacity'.
-  This is a terrible approach, but I can't fix this using CSS alone. At least it will render correctly for everyone.
-  Additionally, spoilored images are also transparent, and not a blob of blur.
-*/
-
 .theme-dark .spoilerText-3p6IlD.hidden-HHr2R9 {
   background-color: var(--main-color);
   opacity: 0.4;
 }
 
-/* When revealed, doesn't keep the damn gray background. */
 .theme-dark .spoilerText-3p6IlD {
   background-color: transparent;
 }
@@ -330,7 +310,6 @@ span.dms>.guild {
   color: #ffffff;
 }
 
-/* Just making it go different color is boring upon hover. Let's do this. */
 @keyframes spoilerHover {
   0% {
     filter: hue-rotate(0deg);
@@ -341,89 +320,14 @@ span.dms>.guild {
   }
 }
 
-/* Bringing Bold back, now that we have proper spoilers. */
-
-/* Bold in Usernames */
-/* User should be capable of changing font, size and color, however they desire.
-    If left empty, use defaults */
-
 .username-_4ZSMR.da-username {
   font-family: var(--un-font);
   font-size: var(--un-size);
   color: var(--un-color);
 }
 
-/* Bold in messages */
-/* Same as username, but different variables. */
-
 .markup-2BOw-j strong {
   font-family: var(--bText-font);
   font-size: var(--bText-size);
   color: var(--bText-color);
 }
-
-
-
-
-
-/*** == O M I T T E D ! == ***/
-/* Causes CPU to constantly run at 10% higher. */
-
-/* Random nonsense, because why the fuck not.
-.avatar-17mtNa.da-avatar {
-  cursor: url(https://i.imgur.com/6RUFZTI.png), auto;
-  animation: cursor 1s infinite;
-}
-*/
-/* Attempting to get cursor to work, as custom cursors are not supported anymore... for real long time ago. */
-/* 16 frames. 100/16 => 6.25% */
-/* Ah fuck. 15 frames. => 6.66% */
-/* Not working like I expect at all. Seems to animate only with movement. Ah fuck. I don't care. */
-/*
-@keyframes cursor {
-  0% {cursor: url(https://i.imgur.com/6RUFZTI.png), auto;}
-  6.67% {cursor: url(https://i.imgur.com/2aZP5xL.png), auto;}
-  13.33% {cursor: url(https://i.imgur.com/AoFZGzX.png), auto;}
-  19.99% {cursor:url(https://i.imgur.com/ftaLNst.png), auto;}
-  26.65% {cursor:url(https://i.imgur.com/mTmkJSM.png), auto;}
-  33.31% {cursor:url(https://i.imgur.com/cfQns9V.png), auto;}
-  39.7% {cursor:url(https://i.imgur.com/DvyURj1.png), auto;}
-  46.63% {cursor:url(https://i.imgur.com/WanhV4u.png), auto;}
-  53.29% {cursor:url(https://i.imgur.com/OU1c3P1.png), auto;}
-  59.95% {cursor:url(https://i.imgur.com/dHs2jRM.png), auto;}
-  66.61% {cursor:url(https://i.imgur.com/965CaxR.png), auto;}
-  73.27% {cursor:url(https://i.imgur.com/CiAAyS7.png), auto;}
-  79.93% {cursor:url(https://i.imgur.com/wBpRcOJ.png), auto;}
-  86.59% {cursor:url(https://i.imgur.com/LJ6HSCP.png), auto;}
-  93.25% {cursor:url(https://i.imgur.com/dBHBCak.png), auto;}
-  100% {cursor:url(https://i.imgur.com/zH23BYD.png), auto;}
-}
-*/
-/* Replace for default cursor. Can be toggeled through custom CSS. This goes after :root {}! */
-
-/* 
-  * {
-    cursor: url(https://i.imgur.com/XE7vTYQ.png), auto;
-    animation: cursor_all 1s infinite;
-  }
-*/
-/*
-@keyframes cursor_all {
-  0% {cursor: url(https://i.imgur.com/XE7vTYQ.png), auto;}
-  6.67% {cursor: url(https://i.imgur.com/ZU9ob6E.png), auto;}
-  13.33% {cursor: url(https://i.imgur.com/3xX0jNY.png), auto;}
-  19.99% {cursor:url(https://i.imgur.com/cSXUWHO.png), auto;}
-  26.65% {cursor:url(https://i.imgur.com/jRALVMM.png), auto;}
-  33.31% {cursor:url(https://i.imgur.com/fNutmci.png), auto;}
-  39.7% {cursor:url(https://i.imgur.com/YJV8p8l.png), auto;}
-  46.63% {cursor:url(https://i.imgur.com/tq1p5Da.png), auto;}
-  53.29% {cursor:url(https://i.imgur.com/x6UzlKp.png), auto;}
-  59.95% {cursor:url(https://i.imgur.com/AnRcRWw.png), auto;}
-  66.61% {cursor:url(https://i.imgur.com/nLvGMl7.png), auto;}
-  73.27% {cursor:url(https://i.imgur.com/IX4n22o.png), auto;}
-  79.93% {cursor:url(https://i.imgur.com/CTrqqYO.png), auto;}
-  86.59% {cursor:url(https://i.imgur.com/8WoR32n.png), auto;}
-  93.25% {cursor:url(https://i.imgur.com/p6rnBhs.png), auto;}
-  100% {cursor:url(https://i.imgur.com/D6OTsKR.png), auto;}
-}
-*/
