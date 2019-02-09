@@ -1,4 +1,4 @@
 # HiksLoader
-::Minified Branch::
+::V2 Beta::
 
-Dunno if I keep this one.
+I deleted old V2, now making a new one from scratch.
