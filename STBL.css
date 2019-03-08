@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 09-02-2019 04:17:19
- * Version: 1.2.5
+ * Last Modified: 08-03-2019 15:18:35
+ * Version: 1.2.6
  *
  * Branch: !! D E V E L O P M E N T !!
  */
@@ -135,7 +135,7 @@ span.dms>.guild {
 /* v v v v v v v v v */
 
 [class*="accountDetails-"]::after {
-  content: "HL 1.2.5d" !important;
+  content: "HL 1.2.6d" !important;
 }
 
 /* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
@@ -330,4 +330,9 @@ span.dms>.guild {
   font-family: var(--bText-font);
   font-size: var(--bText-size);
   color: var(--bText-color);
+}
+
+/* Fixing lost transparency of sidebar (8.03.2019 update) */
+.theme-dark .wrapper-1Rf91z {
+  background-color: rgba(0,0,0,0.45);
 }
