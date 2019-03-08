@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 09-02-2019 04:23:27
- * Version: 1.2.5
+ * Last Modified: 08-03-2019 15:20:26
+ * Version: 1.2.6
  *
  * Branch: MASTER
  */
@@ -26,9 +26,6 @@
   --background-blur: 0;
   --background-brightness: 100%;
 }
-
-/* Usage in root: --z-background: url(#);
-                  --z-effects: blur(2px) grayscale(20%) contrast(50%) etc... */
 
 #pubs-container::before,
 #user-profile-modal .header::before,
@@ -130,16 +127,9 @@ span.dms>.guild {
   height: 64px;
 }
 
-/* ----------------- */
-/*  --- VERSION ---  */
-/* v v v v v v v v v */
-
 [class*="accountDetails-"]::after {
-  content: "HL v1.2.5" !important;
+  content: "HL v1.2.6" !important;
 }
-
-/* ^ ^ ^ ^ ^ ^ ^ ^ ^ */
-/* ----------------- */
 
 @keyframes idling {
 
@@ -328,4 +318,8 @@ span.dms>.guild {
   font-family: var(--bText-font);
   font-size: var(--bText-size);
   color: var(--bText-color);
+}
+
+.theme-dark .wrapper-1Rf91z {
+  background-color: rgba(0,0,0,0.45);
 }
