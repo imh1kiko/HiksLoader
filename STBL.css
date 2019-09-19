@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 11-09-2019 12:59:13
- * Version: 1.2.7
+ * Last Modified: 19-09-2019 15:11:09
+ * Version: 1.2.8
  *
  * Branch: MASTER
  */
@@ -51,38 +51,18 @@ em {
   color: var(--i-color);
 }
 
-.edited {
+/* Edited Tag blinks again */
+.edited-DL9ECl.da-edited {
   -webkit-animation: blink 2s ease-in-out infinite;
   animation: blink 2s ease-in-out infinite;
   font-size: 13px !important;
 }
 
-[class*="theme-"] .wrapper-2F3Zv8 [class*="idle"],
-[class*="theme-"] .wrapper-2F3Zv8 [class*="Idle"],
-.root-2sNHUF [class*="idle"] {
-  -webkit-animation: idling 3s ease-in-out infinite;
-  animation: idling 3s ease-in-out infinite;
-}
+/* Idling removed to being a pain in the ass */
 
-.member-status-dnd,
-[class*="theme-"] [class*="avatar-"] [class*="dnd"],
-[class*="theme-"] [class*="avatar-"] [class*="Dnd"],
-.root-2sNHUF [class*="dnd"],
-[class*="dnd-"] {
+[class*="members-"] [class*="member-"] [aria-label*="Do Not Disturb"] {
   -webkit-animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
   animation: dnd 4s cubic-bezier(0.88, -0.02, 0, 0.36) infinite;
-}
-
-@-webkit-keyframes idling {
-
-  0%,
-  100% {
-    border-color: #ffbe54;
-  }
-
-  50% {
-    border-color: #9a4218;
-  }
 }
 
 [class*="embedContentInner-"] strong {
@@ -128,19 +108,7 @@ span.dms>.guild {
 }
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.2.7" !important;
-}
-
-@keyframes idling {
-
-  0%,
-  100% {
-    border-color: #ffbe54;
-  }
-
-  50% {
-    border-color: #9a4218;
-  }
+  content: "HL v1.2.8" !important;
 }
 
 @-webkit-keyframes blink {
@@ -321,29 +289,29 @@ span.dms>.guild {
 }
 
 .theme-dark .wrapper-1Rf91z {
-  background-color: rgba(0,0,0,0.45);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 
 /* ### Discord update of 9.09.2019
-* Breaks the theme due to their rewrite. Luckily not too hard to fix */
+ * Breaks the theme due to their rewrite. Luckily not too hard to fix */
 
 .theme-dark {
   /* If you like discord's new theme, just disable this here. This seems to control
-  * bigger half of the background */
+   * bigger half of the background */
   --background-tertiary: transparent;
 }
 
 .scroller-2wx7Hm {
-  background-color: rgba(0,0,0,.45);
+  background-color: rgba(0, 0, 0, .45);
 }
 
 .privateChannels-1nO12o {
-  background-color: rgba(0,0,0,.45);
+  background-color: rgba(0, 0, 0, .45);
 }
 
 .panels-j1Uci_ {
-  background-color: rgba(0,0,0,.45);
+  background-color: rgba(0, 0, 0, .45);
 }
 
 .container-2Pjhx- {
@@ -354,6 +322,6 @@ span.dms>.guild {
 
 .timestampCozy-2hLAPV {
   /* First setting a default, and then allowing it to be overridden through variable */
-  color: rgba(254,254,254,.7) !important;
+  color: rgba(254, 254, 254, .7) !important;
   color: var(--dt-color) !important;
 }
