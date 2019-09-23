@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 19-09-2019 15:11:09
- * Version: 1.2.8
+ * Last Modified: 23-09-2019 21:06:30
+ * Version: 1.2.9
  *
  * Branch: MASTER
  */
@@ -108,7 +108,7 @@ span.dms>.guild {
 }
 
 [class*="accountDetails-"]::after {
-  content: "HL v1.2.8" !important;
+  content: "HL v1.2.9" !important;
 }
 
 @-webkit-keyframes blink {
@@ -316,6 +316,11 @@ span.dms>.guild {
 
 .container-2Pjhx- {
   color: var(--channels-default) !important;
+}
+
+/* There's  bug, where this causes some backgrounds to appear. This should fix it. */
+.sidebar-2K8pFh {
+  background: transparent !important;
 }
 
 /* Also, requested to add date/time to be more visible, so here. */
