@@ -83,12 +83,14 @@ More variables.
 
 ## Text Stroke Variables
 
-This adds stroke around the font.
+This adds stroke around the font (only bold).
 > --ts: color width;
+
 _example:   --ts: 1px white;_
 
 This changes the fill color.
 > --tsf: color;
+
 _example:   --tsf: transparent;_
 
 ## Blockquote Variables
@@ -98,8 +100,10 @@ Background:
 > -bg: color;
 Rounded corners:
 > -br: radius;
+
 _example: --bq-br: 0 15px 15px 5px;_
 
 Margin:
 > -margin: value;
+
 _example: --bq-margin: 15px 0 0 0;   This adds some margin to the top._
