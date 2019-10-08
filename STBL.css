@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 23-09-2019 21:06:30
- * Version: 1.2.9
+ * Last Modified: 08-10-2019 19:52:21
+ * Version: 1.2.10
  *
  * Branch: MASTER
  */
@@ -105,10 +105,6 @@ span.dms>.guild {
 .emoji.jumboable {
   width: 64px;
   height: 64px;
-}
-
-[class*="accountDetails-"]::after {
-  content: "HL v1.2.9" !important;
 }
 
 @-webkit-keyframes blink {
@@ -329,4 +325,12 @@ span.dms>.guild {
   /* First setting a default, and then allowing it to be overridden through variable */
   color: rgba(254, 254, 254, .7) !important;
   color: var(--dt-color) !important;
+}
+
+/* ### 8/10/2019 -- Adding a few variables to blockquotes  ### */
+
+.blockquoteContainer-U5TVEi {
+  background: var(--bq-bg);
+  margin: var(--bq-margin);
+  border-radius: var(--bq-br);
 }
