@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 08-10-2019 20:16:08
+ * Last Modified: 08-10-2019 20:35:31
  * Version: 1.2.11
  *
  * Branch: MASTER
@@ -282,6 +282,8 @@ span.dms>.guild {
   font-family: var(--bText-font);
   font-size: var(--bText-size);
   color: var(--bText-color);
+  -webkit-text-stroke: var(--ts);
+  -webkit-text-fill-color: var(--tsf)
 }
 
 .theme-dark .wrapper-1Rf91z {
@@ -333,11 +335,4 @@ span.dms>.guild {
   background: var(--bq-bg);
   margin: var(--bq-margin);
   border-radius: var(--bq-br);
-}
-
-/* Decided to also add stroke variables for bold */
-
-.markup-2BOw-j strong {
-  -webkit-text-stroke: var(--ts);
-  -webkit-text-fill-color: var(--tsf)
 }
