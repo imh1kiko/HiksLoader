@@ -76,3 +76,30 @@ If you read the italic segment, you know how to use these too. Do keep in mind, 
 # Warning!
 
 If you use it on big servers, you are so gonna get slapped with higher CPU, due to animations. This is **_NOT_** to be used on big servers. This is just for me and SO.
+
+
+# Update of 8/10/2019
+More variables.
+
+## Text Stroke Variables
+
+This adds stroke around the font.
+> --ts: color width;
+_example:   --ts: 1px white;_
+
+This changes the fill color.
+> --tsf: color;
+_example:   --tsf: transparent;_
+
+## Blockquote Variables
+All of these start with --bq-, indicating to "blockquote".
+
+Background:
+> -bg: color;
+Rounded corners:
+> -br: radius;
+_example: --bq-br: 0 15px 15px 5px;_
+
+Margin:
+> -margin: value;
+_example: --bq-margin: 15px 0 0 0;   This adds some margin to the top._
