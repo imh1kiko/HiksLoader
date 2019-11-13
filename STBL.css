@@ -1,6 +1,6 @@
 /*
  * Author: Hiki
- * Last Modified: 13-11-2019 23:18:58
+ * Last Modified: 13-11-2019 23:26:15
  * Version: 1.2.11
  *
  * Branch: MASTER
@@ -338,7 +338,6 @@ span.dms>.guild {
 }
 
 /* ### 13/11/2019 -- Discord updated embeds. They are  just shit. ### */
-/* ### Experimenta ### */
 
 .embedWrapper-3AbfJJ,
 .embedFull-2tM8--,
@@ -346,9 +345,10 @@ span.dms>.guild {
 .da-embedWrapper,
 .da-embedFull,
 .da-embed {
-  background: rgba(0, 0, 0, .3);
+  background: var(--embedBG);
   border-radius: 15px;
   padding: 3px;
+  border: var(--embedBorder);
 }
 
 .embedFull-2tM8-- .embedMedia-1guQoW {
