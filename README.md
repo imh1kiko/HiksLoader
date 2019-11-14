@@ -108,3 +108,14 @@ Margin:
 
 _example: --bq-margin: 15px 0 0 0;   
 This adds some margin to the top._
+___
+
+### 14/11/2019 -- Embed Rewrite
+Introduces new variables.
+
+> --embedBG: color;
+> --embedBorder: Npx style color;
+
+Embed Preview:
+![Youtube Link](https://i.imgur.com/cqYNuFV.png)
+![Link](https://i.imgur.com/nZxeqii.png)
