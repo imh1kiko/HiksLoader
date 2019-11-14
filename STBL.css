@@ -1,7 +1,7 @@
 /*
  * Author: Hiki
- * Last Modified: 13-11-2019 23:26:15
- * Version: 1.2.11
+ * Last Modified: 14-11-2019 02:10:50
+ * Version: 1.3
  *
  * Branch: MASTER
  */
@@ -348,12 +348,13 @@ span.dms>.guild {
   background: var(--embedBG);
   border-radius: 15px;
   padding: 3px;
-  border: var(--embedBorder);
+  border: var(--embedBorder) !important;
 }
 
 .embedFull-2tM8-- .embedMedia-1guQoW {
   margin-top: 16px !important;
   margin: auto;
+  border-color: var(--embedBorder) !important
 }
 
 .embedTitle-3OXDkz,
