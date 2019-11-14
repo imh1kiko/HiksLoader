@@ -114,8 +114,11 @@ ___
 Introduces new variables.
 
 > --embedBG: color;
+
 > --embedBorder: Npx style color;
 
 Embed Preview:
+
 ![Youtube Link](https://i.imgur.com/cqYNuFV.png)
+
 ![Link](https://i.imgur.com/nZxeqii.png)
